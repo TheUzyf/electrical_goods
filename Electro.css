@@ -1,0 +1,142 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 20px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+main 
+{
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid black;
+}
+
+main:after 
+{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+header
+{
+	text-align:center;
+	border: 2px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+
+content
+{
+    float: left;
+	min-height: 600px;
+	width: 550px;
+	border: 2px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+
+right_column
+{
+	float:right;
+	border: 2px solid black;
+	margin: 5px;
+	padding: 5px;
+	min-height: 600px;
+}
+
+sidebar
+{
+    float:left;
+    width: 22%;
+	min-height: 600px;
+	border: 2px solid black;
+	margin: 5px;
+	padding: 5px;	
+}
+
+.menu a
+{
+    background: #3d3d3d;
+    color: #090;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #666;
+    transition: 0.5s all;
+}
+
+.menu a:hover
+{
+    background: #666;
+    padding: 10px 0 10px 20px;
+}
+
+.menu li:first-child a,
+.menu li .menu-drop li:first-child a
+{
+    border-radius: 5px 5px 0 0;
+}
+ 
+.menu li:last-child a,
+.menu li .menu-drop li:last-child a
+{
+    border-radius: 0 0 5px 5px;
+    border-bottom: 0;
+}
+
+.menu li .menu-drop li a
+{
+    border-radius: 0;
+    border-bottom: 1px solid #666;
+}
+
+.menu-list
+{
+    position: relative;
+}
+
+.menu-drop
+{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top:-9999em;
+    opacity: 0;
+    border-left: 5px solid transparent;
+    transition: 0.5s opacity ;
+}
+
+.menu-list:hover .menu-drop
+{
+    opacity: 1;
+    top:0;
+}
+
+footer
+{
+	min-height: 130px;
+	border: 2px solid black;
+	text-align:center;
+	margin: 5px;
+	padding: 5px;
+}
