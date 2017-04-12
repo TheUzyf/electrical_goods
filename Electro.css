@@ -26,6 +26,7 @@ main
 	margin: 5px;
 	padding: 5px;
 	border: 2px solid black;
+	background: white;
 }
 
 main:after 
@@ -44,6 +45,7 @@ header
 	border: 2px solid black;
 	margin: 5px;
 	padding: 5px;
+	background: white;
 }
 
 content
@@ -78,7 +80,7 @@ sidebar
 .menu a
 {
     background: #3d3d3d;
-    color: #090;
+    color: #fff;
     padding: 10px;
     display: block;
     border-bottom: 1px solid #666;
@@ -139,4 +141,5 @@ footer
 	text-align:center;
 	margin: 5px;
 	padding: 5px;
+	background: white;
 }
