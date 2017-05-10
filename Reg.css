@@ -39,49 +39,50 @@ main:after
 	height: 0;
 }
 
-second_block
-{
-	display: block;
-	margin: 5px;
-	padding: 5px;
-	border: 2px solid black;
-	background: white;
-	text-align:center;
+.form-row {
+	margin-bottom: 8px;
+	overflow: hidden;
+}
+.form-row input {
+	float: right;
+	height: 19px;
+	line-height: 19px;
+	margin: 0px;
+	padding: 0px 5px;
+	width: 287px;
+	border: 1px solid #ABADB3;
 }
 
-second_block:after 
-{
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+.reg-form {
+	width: 416px;
+	margin: 0 auto;
 }
 
-search
-{
-	float:right;
-	display: block;
-	margin: 5px;
-	padding: 5px;
-	border: 2px solid black;
-	background: white;
-	text-align:center;
-	width:300px;
+.form-row textarea {
+	height: 90px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0px 5px;
+    width: 404px;
+    border: 1px solid #ABADB3;
 }
 
-login_form
-{
-	float:right;
-	display: block;
-	margin: 5px;
-	padding: 5px;
-	border: 2px solid black;
-	background: white;
-	text-align:center;
-	width:350px;
-	
+.form-row input[type=submit] {
+	padding:5px;
+	height:25px;
+	width:100%;
+	line-height: 10px;
+	background: #337AB7;
+	color:white;
+}
+
+.form-row input[type=submit]:hover {
+	background:#286090;
+}
+
+* {
+	font-family:arial;
+	font-size:10pt;
 }
 
 header
@@ -91,37 +92,6 @@ header
 	margin: 5px;
 	padding: 5px;
 	background: white;
-}
-
-content
-{
-    float: left;
-	min-height: 600px;
-	width: 550px;
-	border: 2px solid black;
-	margin: 5px;
-	padding: 5px;
-}
-
-right_column
-{
-	float:right;
-	border: 2px solid black;
-	margin: 5px;
-	padding: 5px;
-	min-height: 600px;
-	width: 180px;
-	display: block;
-}
-
-sidebar
-{
-    float:left;
-    width: 22%;
-	min-height: 600px;
-	border: 2px solid black;
-	margin: 5px;
-	padding: 5px;	
 }
 
 .menu a
