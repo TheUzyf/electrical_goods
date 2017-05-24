@@ -3,6 +3,7 @@
 	<?php
 	
 		$page = $_GET['page'] ;
+		$style = $_GET['style'];
 		include ("bd.php");
 		if (($page == 'index' || $page == ''))
 		{
@@ -33,7 +34,7 @@
 			}
 			else
 			{
-				$result = mysql_query("SELECT * FROM product WHERE subcategory='$page'",$db);
+				$result = mysql_query("SELECT * FROM product WHERE subcategory='$page' OR name='$page'",$db);
 				for(;$product = mysql_fetch_array($result);)
 				include ("product_block.php");
 			}

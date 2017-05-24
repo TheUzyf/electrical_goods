@@ -1,11 +1,10 @@
 <?php
-		
-		$idoptions = $product['idoptions'];
-		$result2 = mysql_query("SELECT * FROM options WHERE idoptions='$idoptions'",$db);
-		$options = mysql_fetch_array($result2);
-	?>
+	$idoptions = $product['idoptions'];
+	$result2 = mysql_query("SELECT * FROM options WHERE idoptions='$idoptions'",$db);
+	$options = mysql_fetch_array($result2);
+?>
 	
-	<product_block>
+	<product_block style="height:<?php echo $style;?>px;">
 
 		<image_block>
 			<img src="<?php echo $product['image'];?>" width="175px" >
@@ -16,7 +15,7 @@
 			<?php
 				echo 
 				"
-					<a href=''> <b>{$product['name']}</b> </a> <br>
+					<a href='../index.php?page={$product['name']}&&style=600'> <b>{$product['name']}</b> </a> <br>
 					Категория:  <b>{$product['category']}</b> <br>
 					Подкатегория:  <b>{$product['subcategory']}</b> <br>
 				";
@@ -89,8 +88,14 @@
 						<input value='В корзину' type='submit'>
 					</form>
 				";
+			
 			?>
 			
 		</description_block>
-	
+		
+		<?php
+			if($style == 600)
+				include('parser.php');
+		?>
+		
 	</product_block>	
