@@ -137,6 +137,7 @@ product_block
 {
 	display: block;
 	margin: 1%;
+	padding:1%;
 	border: 2px solid black;
 	background: white;
 	width:99%;
@@ -162,18 +163,8 @@ description_block
 	margin-left:1%;
 	padding: 1%;
 	
-	width:300px;
+	width:290px;
 	height:200px;
-}
-
-product_page
-{
-	display: block;
-	margin: 1%;
-	border: 2px solid black;
-	background: white;
-	width:99%;
-	height:600px;
 }
 
 header
