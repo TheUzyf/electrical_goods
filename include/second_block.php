@@ -17,6 +17,9 @@
 				else
 				{ 
 					echo "<a href=''>Вы вошли на сайт , как ".$_SESSION['login']."</a>";
+					echo '<form action="">
+							  <input value="Корзина" type="submit">
+						  </form>';
 					echo '<form action="../include/exit.php">
 							  <input value="Выход" type="submit">
 						  </form>';
