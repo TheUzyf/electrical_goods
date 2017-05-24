@@ -1,6 +1,6 @@
 ﻿<?php 
 	include ("include/header.php");
-	include ("include/regform.php");
+	include ("include/registration_form.php");
 	include ("include/footer.php");
 ?>
 
